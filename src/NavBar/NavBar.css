@@ -1,0 +1,11 @@
+.navBar {
+    background: 'lightblue';
+}
+
+.navBarContainer {
+    display: 'flex';
+    justify-content: 'space-around';
+    flex-direction: 'row';
+    min-height: '10vh';
+    background: 'lightblue';
+}
