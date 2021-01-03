@@ -5,16 +5,14 @@ function Projects() {
     return(
         <>
             <Grid item>
-                <h2>Codon</h2>
+                <h2>Central-Dogma : October 2019</h2>
                     <p>
-                        This is where I'll describe the codon project.
+                        Central-Dogma is a little package that I wrote to practice my JS skills and learn about npm packages. It's used to convert DNA sequences to RNA and then to Amino Acids.
                     </p>
                     <p>
-                        Should also provide a link to the repo and npm page?
+                        I'd like to re-write the package to bring it up to date with current ES-262 methods but for now, here's a React demo showing some of its features!
                     </p>
-                    <p>
-                        Make a li'l demo
-                    </p>
+                    <p>GITHUB REPO | NPM PAGE</p>
             </Grid>
         </>
     );
