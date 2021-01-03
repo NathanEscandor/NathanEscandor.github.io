@@ -14,7 +14,7 @@ function Home() {
                     Hi! I'm Nathan.<br /><br />
 
                     I'm a software developer based out of Calgary, AB currently focusing on front end web development.<br /><br />
-                    Right now, I'm working on a team at Seequent to translate a desktop application into a TypeScript/React webapp.<br /><br />
+                    Right now, I'm working on a team at Seequent to translate features from a desktop application into a TypeScript/React webapp.<br /><br />
                     In the past, I've worked as a student researcher in Dr. A. P. Jason de Koning's Bioinformatics lab, and at Arterys as a junior developer.<br /><br />
                     When I'm not working on React components, I like to play music, go skateboarding, and spend time with my cats; Chester and Pretzel.
                 </p>
