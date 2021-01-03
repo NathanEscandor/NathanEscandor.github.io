@@ -1,11 +1,19 @@
 import * as React from 'react';
 import { Grid } from '@material-ui/core';
+import { useStyles } from './Contact.styles';
+import LinkedIn from './LinkedIn.png';
+import Github from './Github.png';
+import Mail from './Mail.png';
 
 function Contact() {
+    const classes = useStyles();
+
     return(
         <>
-            <Grid item>
-                <p>Find me on LinkedIn, Github, or email me at nathan.escandor @ gmail</p>
+            <Grid item className={classes.root}>
+                <a href="https://www.linkedin.com/in/nathan-escandor/" className={classes.icon}><img src={LinkedIn} alt=""/></a>
+                <a href="https://www.github.com/nathanescandor/" className={classes.icon}><img src={Github} alt=""/></a>
+                <a href="mailto:nathan.escandor@gmail.com" className={classes.icon}><img src={Mail} alt=""/></a>
             </Grid>
         </>
     );
