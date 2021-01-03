@@ -7,11 +7,13 @@ function Projects() {
             <Grid item>
                 <h2>Codon</h2>
                     <p>
-                        This is where I'll describe the codon project and maybe provide a link.
+                        This is where I'll describe the codon project.
                     </p>
-                <h2>Slipperi</h2> 
                     <p>
-                        Fallen by the wayside, describe it and what it does.
+                        Should also provide a link to the repo and npm page?
+                    </p>
+                    <p>
+                        Make a li'l demo
                     </p>
             </Grid>
         </>
