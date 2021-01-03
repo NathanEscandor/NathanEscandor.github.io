@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Divider } from '@material-ui/core';
+import CodonDemo from './CodonDemo/CodonDemo';
 
 function Projects() {
     return(
@@ -13,7 +14,10 @@ function Projects() {
                         I'd like to re-write the package to bring it up to date with current ES-262 methods but for now, here's a React demo showing some of its features!
                     </p>
                     <p>GITHUB REPO | NPM PAGE</p>
+                <br /><br />
             </Grid>
+            <Divider />
+            <CodonDemo />
         </>
     );
 };

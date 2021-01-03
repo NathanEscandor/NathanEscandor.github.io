@@ -11,7 +11,7 @@ function Experience() {
                             I'm currently working as a <b>Frontend Developer</b> at Seequent - a New Zealand based company that provides software solutions for geological data and various forms of engineering. The Kensington, Calgary team that I work with comprises of 3 pods (Networking, Visualization, Frontend) working together on a TypeScript/React web application that allows users to view, modify, and compare their data in a browser. We also work closely with a UI/UX design team, QA, and a PM to deliver updates in bi-weekly sprints.
                         </p>
                         <p>
-                            I went into this position wanting to get a better understanding of software development best practices to improve my coding and design choices. I'm still working on catching up with the more senior devs, but I've already gained a ton of insight into how to write code for the future and how to make decisions that allow code to scale. This position has also exposed me to the idea of Functional Programming which I've learned to really enjoy due to its resemblance to working in R.
+                            I went into this position wanting to develop my understanding of software development best practices to improve my coding and design choices. I'm still working on catching up with the more senior devs, but I've already gained a ton of insight into how to write code for the future and how to make decisions that allow code to scale. This position has also exposed me to the idea of Functional Programming which I've learned to really enjoy due to its resemblance to working in R.
                         </p>
                     <h3>Arterys : May 2017 - July 2019</h3>
                         <p>
