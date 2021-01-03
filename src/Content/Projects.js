@@ -13,7 +13,7 @@ function Projects() {
                     <p>
                         I'd like to re-write the package to bring it up to date with current ES-262 methods but for now, here's a React demo showing some of its features!
                     </p>
-                    <p>GITHUB REPO | NPM PAGE</p>
+                    <p><a href="https://github.com/NathanEscandor/codon">GITHUB REPO</a> | <a href="https://www.npmjs.com/package/central-dogma">NPM PAGE</a></p>
                 <br /><br />
             </Grid>
             <Divider />
