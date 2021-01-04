@@ -4,6 +4,15 @@ const nuc = require('central-dogma').nucleotide;
 // const nucRna = require('central-dogma').nucleotide;
 const cod = require('central-dogma').codon;
 
+function Instructions() {
+    return (
+        <>
+            <p>Try typing in a DNA sequence using capital T's, C's, G's, and A's (eg: TCGGTAATT)</p>
+            <p>You can also type in an RNA sequence in the middle box using capital U's, C's, G's, and A''s (eg: UCGGUAAUU)</p>
+        </>
+    );
+};
+
 function CodonDemo() {
     // nucDna.setBase('dna');
     // nucRna.setBase('rna');
@@ -41,12 +50,13 @@ function CodonDemo() {
     return(
         <>
             <h1>!! WORK IN PROGRESS !!</h1>
+            <Instructions />
             <Grid item>
                 <input type="text" value={dna} onChange={handleDnaChange}/>
                 <input type="text" value={rna} onChange={handleRnaChange}/>
             </Grid>
             <p>dna: {dna}</p>
-            <p>rna: {rna}</p>
+            <p>rna complement: {rna}</p>
             <p>codons: {codons}</p>
             <p>aas: {aas}</p>
         </>

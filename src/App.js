@@ -24,6 +24,7 @@ function App() {
                 <Switch>
                     <Route path='/experience'><Experience /></Route>
                     <Route path='/projects'><Projects /></Route>
+                    <Route path='/codon'><Projects /></Route>
                     <Route path='/contact'><Contact /></Route>
                     <Route path='/'><Home /></Route>
                 </Switch>
