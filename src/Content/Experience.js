@@ -28,7 +28,7 @@ function Experience() {
                             In addition to the research and programming skills that I picked up in this position, I also got a chance to develop my verbal communication skills at different levels. For example, I learned how to communicate my work to a technical audience by participating in weekly lab meetings, journal clubs, and oral/poster presentations. I also learned how to communicate the importance of our work to non-technical stakeholders through grant/bursary/scholarship applications. And I learned how to communicate what I do to my non-technical friends, family, and peers.
                         </p>
                 <h1>Education</h1>
-                    <h3>University of Calgary - Bachelor of Health Sciences (Bioinformatics) : 2017</h3>
+                    <h3>University of Calgary - Bachelor of Health Sciences (Honours - Bioinformatics) : 2017</h3>
                         <p>
                             My undergraduate degree was in Health Sciences, majoring in Bioinformatics at the University of Calgary. The program combines computer science, health sciences, and biochemistry, with an emphasis on developing scientific research skills and literacy. 
                         </p>

@@ -1,8 +1,24 @@
 import * as React from 'react';
 import { Grid } from '@material-ui/core';
+import { useStyles } from './CodonDemo.styles';
 const nuc = require('central-dogma').nucleotide;
-// const nucRna = require('central-dogma').nucleotide;
 const cod = require('central-dogma').codon;
+
+function setNucDna() {
+    nuc.setBase('dna');
+}
+
+function setNucRna() {
+    nuc.setBase('rna');
+}
+
+function setCodDna() {
+    cod.setBase('dna');
+}
+
+function setCodRna() {
+    cod.setBase('rna');
+}
 
 function Instructions() {
     return (
@@ -14,50 +30,100 @@ function Instructions() {
 };
 
 function CodonDemo() {
-    // nucDna.setBase('dna');
-    // nucRna.setBase('rna');
+
+    const classes = useStyles();
 
     const [dna, setDna] = React.useState('');
-    const [rna, setRna] = React.useState('');
-    const [codons, setCodons] = React.useState(['']);
+    const [rnaComplement, setRnaComplement] = React.useState('');
+    const [rnaCodons, setRnaCodons] = React.useState(['']);
     const [aas, setAas] = React.useState(['']);
 
+    const updateRnaComplementFromDna = (newDnaSequence) => {
+        setNucDna();
+        const dnaComplement = nuc.toComplement(newDnaSequence);
+        const newRnaComplement = nuc.dnaToRna(dnaComplement);
+        setRnaComplement(newRnaComplement.toUpperCase());
+    };
+
+    const updateDnaFromRnaComplement = (newRnaComplement) => {
+        setNucRna();
+        const originalRnaSequence = nuc.toComplement(newRnaComplement);
+
+        setNucDna()
+        const newDnaSequence = nuc.rnaToDna(originalRnaSequence);
+        setDna(newDnaSequence.toUpperCase());
+
+
+    };
+
+    const getRnaComplementFromDna = (dnaSequence) => {
+        setNucDna();
+        const dnaComplement = nuc.toComplement(dnaSequence);
+        return nuc.dnaToRna(dnaComplement);
+    };
 
     const handleDnaChange = (e) => {
-        const newDnaSequence = e.target.value;
+        const newDnaSequence = e.target.value.toUpperCase();
         setDna(newDnaSequence);
 
-        const cods = nuc.toCodon(newDnaSequence);
-        setCodons(cods);
+        
+        setNucRna();
+        setCodRna();
+        const rnaComplement = getRnaComplementFromDna(newDnaSequence);
+        const newRnaCodons = nuc.toCodon(rnaComplement);
+        const filteredCodons = newRnaCodons.filter(() => cod !== undefined);
+        const newAas = cod.sequenceToAminoAcid(filteredCodons);
 
-        const complement = nuc.toComplement(newDnaSequence);
-        const rnaSequence = nuc.dnaToRna(complement);
-        setRna(rnaSequence);
+        setRnaCodons(newRnaCodons);
+        setAas(newAas);
 
-        cod.setBase('rna');
-        const aminos = cod.sequenceToAminoAcid(rnaSequence);
-        setAas(aminos);
+        updateRnaComplementFromDna(newDnaSequence);
+
     };
 
     const handleRnaChange = (e) => {
-        setRna(e.target.value);
+        const newRnaComplement = e.target.value.toUpperCase();
+        setRnaComplement(newRnaComplement);
+
+        setNucRna();
+        setCodRna();
+        const newRnaCodons = nuc.toCodon(newRnaComplement);
+        const filteredCodons = newRnaCodons.filter(() => cod !== undefined);
+        const newAas = cod.sequenceToAminoAcid(filteredCodons);
+
+        setRnaCodons(newRnaCodons);
+        setAas(newAas);
+
+        updateDnaFromRnaComplement(newRnaComplement);
     }
 
-    React.useEffect(() => {
+    // React.useEffect(() => {
+    //     updateRnaComplementFromDna(dna);
+    // }, [dna])
 
-    }, [dna, rna])
+    // React.useEffect(() => {
+    //     updateDnaFromRnaComplement(rnaComplement);
+    // }, [rnaComplement])
 
-    return(
+    return (
         <>
             <h1>!! WORK IN PROGRESS !!</h1>
-            <Instructions />
-            <Grid item>
-                <input type="text" value={dna} onChange={handleDnaChange}/>
-                <input type="text" value={rna} onChange={handleRnaChange}/>
+            {/* <Instructions /> */}
+            <Grid item container className={classes.root}>
+                <Grid item>
+                    <textarea type="text" value={dna} onChange={handleDnaChange} className={classes.textBox}/>
+                </Grid>
+                <Grid item>
+                    <textarea type="text" value={rnaComplement} onChange={handleRnaChange} className={classes.textBox}/>
+                </Grid>
+                <Grid item>
+                    <textarea readonly type="text" value={aas} className={classes.textBox}/>
+                </Grid>
             </Grid>
+
             <p>dna: {dna}</p>
-            <p>rna complement: {rna}</p>
-            <p>codons: {codons}</p>
+            <p>rna complement: {rnaComplement}</p>
+            <p>codons: {rnaCodons}</p>
             <p>aas: {aas}</p>
         </>
     );
