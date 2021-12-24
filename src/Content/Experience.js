@@ -6,12 +6,12 @@ function Experience() {
         <>
             <Grid item>
                 <h1>Work</h1>
-                    <h3>Seequent : March 2020 - Present</h3>
+                    <h3>Seequent : March 2020 - October 2021</h3>
                         <p>
-                            I'm currently working as a <b>Frontend Developer</b> at Seequent - a New Zealand based company that provides software solutions for geological data and various forms of engineering. The Kensington, Calgary team that I work with comprises of 3 pods (Networking, Visualization, Frontend) working together on a TypeScript/React web application that allows users to view, modify, and compare their data in a browser. We also work closely with a UI/UX design team, QA, and a PM to deliver updates in bi-weekly sprints.
+                            I recently worked as a <b>Web Developer</b> at Seequent - a New Zealand based company that provides software solutions for geological data and various forms of engineering. The Kensington, Calgary team that I work with comprises of 3 pods (Backend, Visualization, Frontend) working together on a TypeScript/React web application that allows users to view, modify, and compare their data in a browser. We also worked closely with a UI/UX design team, QA, and a PM to deliver updates in bi-weekly sprints.
                         </p>
                         <p>
-                            I went into this position wanting to develop my understanding of software development best practices to improve my coding and design choices. I'm still working on catching up with the more senior devs, but I've already gained a ton of insight into how to write code for the future and how to make decisions that allow code to scale. This position has also exposed me to the idea of Functional Programming which I've learned to really enjoy due to its resemblance to working in R.
+                            I went into this position wanting to develop my understanding of software development best practices to improve my coding and design choices. Working on both the Front (~13 months) and Back (~6 months) ends allowed me to develop a sense of familiarity with the codebase, and a more complete understanding of considerations that should be made when deploying an application. I also became a lot more comfortable with taking a ticket from planning to production, and finally have confidence in my skills as a software developer. Overall, my time with the Seequent Kensington team was not only beneficial for my software skills, but was also insightful in terms of how I best operate as an employee.
                         </p>
                     <h3>Arterys : May 2017 - July 2019</h3>
                         <p>
