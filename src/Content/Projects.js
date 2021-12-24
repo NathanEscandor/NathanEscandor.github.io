@@ -4,6 +4,16 @@ import { Grid, Divider } from '@material-ui/core';
 function Projects() {
     return(
         <>
+            <h1>Current Projects</h1>
+            <Grid item>
+                <p>
+                    At the moment, I'm playing with projects in a couple of different areas and trying to see if anything sticks out to me. In particular, I'm working through some O'Reilly Python Data Science books, mlcourse.ai, and playing around with an Arduino Uno to learn some embedded software. I'm also in the planning stages of some hobby-related websites (skateboarding and DJing), and working on updating + improving this site :) 
+                </p>
+            </Grid>
+            <Grid item>
+                <Divider/>
+            </Grid>
+            <h1>Past Projects</h1>
             <Grid item>
                 <h2>Central-Dogma : October 2019</h2>
                     <p>
