@@ -1,10 +1,13 @@
 import * as React from 'react';
+import { useStyles } from './Experience.styles';
 import { Grid } from '@material-ui/core';
 
 function Experience() {
+    const classes = useStyles();
+
     return(
         <>
-            <Grid item>
+            <Grid item className={classes.root}>
                 <h1>Work</h1>
                     <h3>Seequent : March 2020 - October 2021</h3>
                         <p>

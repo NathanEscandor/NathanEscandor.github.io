@@ -1,9 +1,12 @@
 import * as React from 'react';
+import { useStyles } from './Projects.styles';
 import { Grid, Divider } from '@material-ui/core';
 
 function Projects() {
+    const classes = useStyles();
+
     return(
-        <>
+        <Grid className={classes.root}>
             <h1>Current Projects</h1>
             <Grid item>
                 <p>
@@ -28,7 +31,7 @@ function Projects() {
                     <p><a href="https://github.com/NathanEscandor/codon">GITHUB REPO</a> | <a href="https://www.npmjs.com/package/central-dogma">NPM PAGE</a></p>
                 <br /><br />
             </Grid>
-        </>
+        </Grid>
     );
 };
 

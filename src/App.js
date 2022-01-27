@@ -3,10 +3,10 @@ import { Grid } from '@material-ui/core';
 import './App.css';
 import { useStyles } from './App.styles';
 import NavBar from './NavBar/NavBar';
-import Home from './Content/Home';
-import Experience from './Content/Experience';
-import Projects from './Content/Projects';
-import Contact from './Content/Contact';
+import Home from './Content/Home/Home';
+import Experience from './Content/Experience/Experience';
+import Projects from './Content/Projects/Projects';
+import Contact from './Content/Contact/Contact';
 
 function App() {
     const classes = useStyles();
