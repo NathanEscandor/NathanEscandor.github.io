@@ -11,10 +11,11 @@ import ReactGA from 'react-ga';
 import RouteChangeTracker from './utils/RouteChangeTracker';
 
 const TRACKING_ID = "G-155D1EMWN2";
-ReactGA.initialize(TRACKING_ID);
 
 function App() {
     const classes = useStyles();
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
         <Grid container className={classes.root}>
