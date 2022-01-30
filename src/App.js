@@ -7,7 +7,11 @@ import Home from './Content/Home/Home';
 import Experience from './Content/Experience/Experience';
 import Projects from './Content/Projects/Projects';
 import Contact from './Content/Contact/Contact';
-import GA from './utils/GoogleAnalytics';
+import ReactGA from 'react-ga';
+import RouteChangeTracker from './utils/RouteChangeTracker';
+
+const TRACKING_ID = "G-155D1EMWN2";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
     const classes = useStyles();
@@ -18,7 +22,9 @@ function App() {
                 <h1>Nathan Escandor</h1>
             </Grid>
             <Router>
-                { GA.init() && <GA.RouteTracker /> }
+                <RouteChangeTracker />
+                {/* { GA.init() && <GA.RouteTracker /> } */}
+
                 <Grid item container>
                     <NavBar />
                 </Grid>
