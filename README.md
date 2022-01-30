@@ -7,11 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Deploying using GH Pages for now. Will probably stick to this until it gets more complex or I want to play with AWS/Azure deployment.
 
 # TODOS:
-[ ] Analytics
-[ ] 404 Issue
-[ ] navbar hover style persistence on mobile
-[ ] Storybook
-[ ] Favicon
-[ ] Caching?
-[ ] Music Section
-[ ] Blog
+- [x] Analytics
+- [x] 404 Issue
+- [ ] navbar hover style persistence on mobile
+- [ ] Storybook
+- [ ] Favicon
+- [ ] Caching?
+- [ ] Music Section
+- [ ] Blog
