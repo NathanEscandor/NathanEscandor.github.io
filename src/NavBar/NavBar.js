@@ -10,16 +10,16 @@ function NavBar() {
         <>
             <Grid container className={classes.root}>
                 <nav className={classes.navBar}>
-                    <Grid item>
+                    <Grid item className={classes.item}>
                         <NavBarItem name="Home" link="/"/>
                     </Grid>
-                    <Grid item>
+                    <Grid item className={classes.item}>
                         <NavBarItem name="Experience" link="/experience"/>
                     </Grid>
-                    <Grid item>
+                    <Grid item className={classes.item}>
                         <NavBarItem name="Projects" link="/projects"/>
                     </Grid>
-                    <Grid item>
+                    <Grid item className={classes.item}>
                         <NavBarItem name="Contact" link="/contact"/>
                     </Grid>
                 </nav>

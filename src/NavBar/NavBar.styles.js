@@ -10,7 +10,12 @@ export const styles = (theme) => createStyles({
         display: 'flex',
         justifyContent: 'space-evenly',
         flexDirection: 'row',
-    },    
+    },
+    item: {
+        '&:hover': {
+            backgroundColor: '#ddd9de',
+        }
+    }
 });
 
 export const useStyles = makeStyles(styles);
