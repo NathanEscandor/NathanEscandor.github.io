@@ -12,6 +12,7 @@ export const styles = (theme) => createStyles({
     },
     image: {
         margin: '12px',
+        minWidth: '350px',
     },
 });
 
