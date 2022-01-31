@@ -8,14 +8,12 @@ import Experience from './Content/Experience/Experience';
 import Projects from './Content/Projects/Projects';
 import Contact from './Content/Contact/Contact';
 import ReactGA from 'react-ga4';
-import RouteChangeTracker from './utils/RouteChangeTracker';
 
 const GA4_TRACKING_ID = "G-155D1EMWN2";
 
 function App() {
     const classes = useStyles();
     ReactGA.initialize(GA4_TRACKING_ID);
-    // ReactGA.send(window.location.pathname + window.location.search);
 
     return (
         <Grid container className={classes.root}>
@@ -23,9 +21,6 @@ function App() {
                 <h1>Nathan Escandor</h1>
             </Grid>
             <Router>
-                <RouteChangeTracker />
-                {/* { GA.init() && <GA.RouteTracker /> } */}
-
                 <Grid item container>
                     <NavBar />
                 </Grid>
