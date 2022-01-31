@@ -11,6 +11,8 @@ Deploying using GH Pages for now. Will probably stick to this until it gets more
 - [x] 404 Issue
 - [ ] navbar hover style persistence on mobile
 - [ ] Storybook
+- [ ] Fix yarn and npm
+- [ ] Get rid of remaining create-react-app jank
 - [ ] Favicon
 - [ ] Caching?
 - [ ] Music Section

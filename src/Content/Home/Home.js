@@ -13,7 +13,7 @@ function Home() {
                 <p>
                     Hi! I'm Nathan.<br /><br />
 
-                    I'm a software developer based out of Calgary, AB. Most of my experience is in web development, but I'm interested in learning more about data science and embedded software.<br /><br />
+                    I'm a software developer based out of Calgary, AB. Most of my experience is in web development, but I'm interested in learning more about data engineering and embedded software.<br /><br />
                     I recently worked at Seequent Kensington as a web developer on their frontend (TypeScript/React) and backend (Python) teams to translate features from a desktop modeling application into a webapp.<br /><br />
                     In the past, I've worked as a student researcher in Dr. A. P. Jason de Koning's Bioinformatics lab, and at Arterys as a junior developer.<br /><br />
                     When I'm not working on software or learning new technologies, I like to play music, videogames, go skateboarding, and spend time with my cats; Chester and Pretzel.
