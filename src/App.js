@@ -7,13 +7,9 @@ import Home from './Content/Home/Home';
 import Experience from './Content/Experience/Experience';
 import Projects from './Content/Projects/Projects';
 import Contact from './Content/Contact/Contact';
-import ReactGA from 'react-ga4';
-
-const GA4_TRACKING_ID = "G-155D1EMWN2";
 
 function App() {
     const classes = useStyles();
-    ReactGA.initialize(GA4_TRACKING_ID);
 
     return (
         <Grid container className={classes.root}>
