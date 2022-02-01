@@ -7,6 +7,7 @@ import Home from './Content/Home/Home';
 import Experience from './Content/Experience/Experience';
 import Projects from './Content/Projects/Projects';
 import Contact from './Content/Contact/Contact';
+import KayTools from './Content/KayTools/KayTools';
 
 function App() {
     const classes = useStyles();
@@ -26,6 +27,7 @@ function App() {
                     <Route path='/projects'><Projects /></Route>
                     <Route path='/codon'><Projects /></Route>
                     <Route path='/contact'><Contact /></Route>
+                    <Route path='/kay'><KayTools /></Route>
                     <Route path='/'><Home /></Route>
                 </Switch>
             </Router>   
